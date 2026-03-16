@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stripe + Supabase SaaS Billing System
 
-## Getting Started
+A full-stack **SaaS subscription billing system** built to demonstrate real-world payment integration and modern SaaS architecture.
 
-First, run the development server:
+This project showcases how a modern application can handle **user authentication, subscription payments, and billing management** using Stripe and Supabase.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This application simulates a real SaaS platform where users can:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+• Sign up and log in securely
+• View available subscription plans
+• Subscribe to a paid plan using Stripe Checkout
+• Access a protected dashboard
+• View their subscription status
+• Receive confirmation after successful payment
 
-## Learn More
+The goal of this project is to demonstrate how a developer can implement a **complete subscription workflow used in production SaaS products**.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
 
-## Deploy on Vercel
+• Next.js (App Router)
+• React
+• TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Backend & APIs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+• Next.js API Routes
+• Stripe API for payment processing
+• Stripe Webhooks for event handling
+
+### Authentication & Database
+
+• Supabase Authentication
+• Supabase PostgreSQL database
+
+### Payment Infrastructure
+
+• Stripe Checkout for secure payments
+• Stripe Webhooks for subscription updates
+
+---
+
+## Key Features
+
+### User Authentication
+
+Users can create an account and securely log in using Supabase authentication.
+
+### Subscription Billing
+
+Stripe Checkout is used to handle subscription payments.
+
+The platform supports:
+
+• Monthly subscription plan
+• Secure payment processing
+• Automatic billing handling
+
+### Dashboard Access
+
+After login, users can access a protected dashboard where they can see:
+
+• Their account information
+• Subscription status
+• Payment confirmation
+
+### Webhook Integration
+
+Stripe webhooks are used to detect important events such as:
+
+• Successful checkout sessions
+• Subscription updates
+• Payment confirmations
+
+These events can be used to update the application database and maintain accurate billing records.
+
+---
+
+## SaaS Architecture Demonstrated
+
+This project demonstrates key concepts used in real SaaS products:
+
+• Secure authentication flow
+• Payment gateway integration
+• Subscription lifecycle management
+• Webhook event handling
+• Protected dashboard routes
+• Full-stack API architecture
+
+---
+
+## Stripe Test Payment
+
+This project runs in **Stripe Test Mode**, which allows safe testing without real payments.
+
+Test Card:
+
+Card Number: 4242 4242 4242 4242
+Expiry Date: Any future date
+CVC: Any 3 digits
+
+---
+
+## Why This Project
+
+The goal of this project is to demonstrate my ability to build **production-style SaaS systems** that combine:
+
+• Frontend UI development
+• Backend API logic
+• Database integration
+• Third-party payment infrastructure
+
+This type of architecture is commonly used in modern subscription-based platforms.
+
+---
+
+## Author
+
+Sudipta Halder
